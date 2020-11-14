@@ -23,6 +23,18 @@ f = figure;
 ax = axes('Parent',f,'position',[0.13 0.39  0.77 0.54]);
 h = plot(ax,[t,y]);
 
+b = uicontrol('Parent',f,'Style','slider','Position',[81,54,419,23],...
+              'value',R, 'min',0, 'max',N);
+bgcolor = f.Color;
+bl1 = uicontrol('Parent',f,'Style','text','Position',[50,54,23,23],...
+                'String','0','BackgroundColor',bgcolor);
+bl2 = uicontrol('Parent',f,'Style','text','Position',[500,54,23,23],...
+                'String','N','BackgroundColor',bgcolor);
+bl3 = uicontrol('Parent',f,'Style','text','Position',[240,25,100,23],...
+                'String','R','BackgroundColor',bgcolor);
+
+            
+            
 %Define function for model
 function dy = seir(t,y)
     %initial conditions of derivatives (0) + constants
