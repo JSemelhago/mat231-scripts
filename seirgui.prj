@@ -3,7 +3,7 @@
     <param.appname>SEIR_GUI_Canada</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.0</param.version>
+    <param.version>2.0</param.version>
     <param.authnamewatermark>Justin Semelhago</param.authnamewatermark>
     <param.email>justin.semelhago@mail.utoronto.ca</param.email>
     <param.company>University of Toronto</param.company>
@@ -45,7 +45,6 @@
     <unset>
       <param.icon />
       <param.icons />
-      <param.version />
       <param.description />
       <param.screenshot />
       <param.guid />
