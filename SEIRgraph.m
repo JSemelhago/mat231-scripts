@@ -1,10 +1,9 @@
 
-
-N = 38005237;
 %Initial values
-R = 5;
-I = 5;
-E = 5;
+N = 38005237;
+R = 0;
+I = 20;
+E = 691;
 S = N-R-I-E;
 
 initial_value = [S E I R];
@@ -12,16 +11,15 @@ initial_value = [S E I R];
 %x-axis day range
 tspan = [0 365];
 
+%Solve ODE using ode45 solver
 [t, y] = ode45(@seir, tspan, initial_value);
-% plot(t, y);
-% legend('Susceptible','Exposed','Infected','Removed');
-% title('SEIR Model for Covid-19 in Canada');
-% xlabel('Days');
-% ylabel('Population');
 
-f = figure;
-ax = axes('Parent',f,'position',[0.13 0.39  0.77 0.54]);
-h = plot(ax,[t,y]);
+%Plot solution
+plot(t, y);
+legend('Susceptible','Exposed','Infected','Removed');
+title('SEIR Model for Covid-19 in Canada');
+xlabel('Days');
+ylabel('Population');
 
 %Define function for model
 function dy = seir(t,y)
