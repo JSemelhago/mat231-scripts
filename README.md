@@ -22,7 +22,7 @@ Run `seirgui/for_redistribution_files_only/SEIR_GUI_Canada.exe` for applet as sh
 
 
 
-![MATLAB Applet](C:\Users\jseme\Documents\MAT231\mat231-seirmodel\seir_applet.png)
+![MATLAB Applet](seir_applet.png?raw=true)
 
 
 
@@ -32,4 +32,4 @@ Code to solve system of ODEs numerically using Euler's method through Jupyter No
 
 
 
-![SEIR Python](C:\Users\jseme\Documents\MAT231\mat231-seirmodel\seir_eulers.png)
+![Python Eulers](seir_eulers.png?raw=true)
