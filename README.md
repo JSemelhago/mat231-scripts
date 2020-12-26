@@ -1,35 +1,15 @@
-# mat231-seirmodel
+# mat231-scripts
 
-Project B in MAT231 to generate an SEIR model for Covid-19 in Canada. 
-
-Repository includes MATLAB code, applet, and Python code.
-
-
+MATLAB and Python scripts used in MAT231: Modelling with Differential Equations
 
 ### MATLAB Code
 
-Code to produce SEIR plot using `ode45` differential solver in MATLAB.
+A collection of multiple MATLAB scripts to help demystify differential equations. Descriptions of each file can be found in a comment at the top of each script.
 
-Run `SEIRgraph.m` to produce the plot.
+### Projects
 
-### MATLAB Applet
+`SEIR_model` contains code for a MATLAB applet to solve a system of ODEs in the context of an SEIR model using `ode45`. It also contains the corresponding code for that and the Python code for solving it using Euler's method.
 
-Code to produce a MATLAB applet which uses MATLAB App Designer. The plotting code is the same as what's under **MATLAB Code**. 
+`SupplyChain_model` contains code that runs simulations to generate an aggregate representing the supply chain for a small store. It utilizes a Poisson distribution.
 
-Encourages the user to perform a sensitivity analysis by allowing adjustment of initial values. 
-
-Run `seirgui/for_redistribution_files_only/SEIR_GUI_Canada.exe` for applet as shown below or run `seirgui.mlapp` if MATLAB is installed (newer than 2017b):
-
-
-
-![MATLAB Applet](seir_applet.png?raw=true)
-
-
-
-### Python Code
-
-Code to solve system of ODEs numerically using Euler's method through Jupyter Notebook. The code creates `seir_eulersdata.csv` and is then plotted using `seaborn`:
-
-
-
-![Python Eulers](seir_eulers.png?raw=true)
+Output figures for both these projects can be found in their respective folders.
